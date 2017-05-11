@@ -1,0 +1,13 @@
+<?php
+header("content-type:text/html;charset=utf-8");
+include_once("lib.php");
+$xh=$_GET['xh'];
+$xm=$_GET['xm'];
+$sex=$_GET['sex'];
+$bj=$_GET['bj'];
+$smarty->assign("xh",$xh);
+$smarty->assign("xm",$xm);
+$smarty->assign("sex",$sex);
+$smarty->assign("bj",$bj);
+$smarty->display("s_update.tpl");
+?>

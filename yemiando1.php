@@ -1,0 +1,9 @@
+<?php
+header("content-type:text/html;charset=utf-8");
+include_once("lib.php");
+$ymm=$_POST['mm'];
+$zh=$_POST['zh'];
+$smarty->assign("zh",$zh);
+$smarty->assign("ymm",$ymm);
+$smarty->display("gaimm.tpl");
+?>
